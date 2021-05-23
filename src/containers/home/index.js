@@ -3,6 +3,7 @@ import React from "react";
 import { Button, Header } from "../../components";
 
 import "./styles.scss";
+
 import {
   trevaIcon,
   velocityIcon,
@@ -13,6 +14,7 @@ import {
   foxhubIcon,
   avenIcon,
   amaraIcon,
+  homeImage,
 } from "../../asserts/images";
 
 const Home = () => {
@@ -48,7 +50,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="empty-container">
+      <div className="home-empty-container">
         <Header />
       </div>
 
@@ -63,7 +65,9 @@ const Home = () => {
           <Button text={"Get Started"} />
         </div>
 
-        <div className="right-content" />
+        <div className="right-content">
+          <img alt="Home" src={homeImage} />
+        </div>
       </div>
 
       <div className="middle-container">

@@ -9,6 +9,7 @@ import avenIcon from "./avenIcon.png";
 import amaraIcon from "./amaraIcon.png";
 import recruiterIcon from "./recruiterIcon.png";
 import candidateIcon from "./candidateIcon.png";
+import homeImage from "./homeImage.jpeg";
 
 export {
   trevaIcon,
@@ -22,4 +23,5 @@ export {
   amaraIcon,
   recruiterIcon,
   candidateIcon,
+  homeImage,
 };
