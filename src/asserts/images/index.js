@@ -7,6 +7,8 @@ import hexLabIcon from "./hexLabIcon.png";
 import foxhubIcon from "./foxhubIcon.png";
 import avenIcon from "./avenIcon.png";
 import amaraIcon from "./amaraIcon.png";
+import recruiterIcon from "./recruiterIcon.png";
+import candidateIcon from "./candidateIcon.png";
 
 export {
   trevaIcon,
@@ -18,4 +20,6 @@ export {
   foxhubIcon,
   avenIcon,
   amaraIcon,
+  recruiterIcon,
+  candidateIcon,
 };

@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.login-container {
+.signup-container {
   position: absolute;
   background: $white;
   padding: 30px;
@@ -45,14 +45,54 @@
     }
   }
 
-  .forgot-pass {
+  .top-text {
     margin-top: 23px;
     font-size: 16px;
   }
 
+  .top-btn-parent {
+    display: flex;
+    margin-top: 8px;
+
+    .top-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      padding: 12px 17px;
+      width: 136px;
+
+      img {
+        width: 23px;
+        height: 23px;
+        margin-right: 10px;
+      }
+    }
+    .recruiter-btn {
+      background: $light-blue;
+      border: 1px solid $light-blue;
+      color: $white;
+      margin-right: 20px;
+    }
+
+    .candidate-btn {
+      border: 1px solid $grey;
+      background: $fade-grey;
+    }
+  }
+
   .password {
     display: flex;
-    justify-content: space-between;
+
+    .left-pass {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .right-pass {
+      flex: 1;
+      margin-left: 10px;
+    }
   }
 
   .blue-text {
@@ -84,8 +124,20 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .login-container {
+@media only screen and (max-width: 700px) {
+  .signup-container {
     width: 300px;
+
+    .password {
+      display: block;
+
+      .left-pass {
+        margin-right: 0;
+      }
+
+      .right-pass {
+        margin-left: 0;
+      }
+    }
   }
 }
