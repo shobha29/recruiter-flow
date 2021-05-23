@@ -51,6 +51,7 @@ const Home = () => {
       <div className="empty-container">
         <Header />
       </div>
+
       <div className="top-container">
         <div className="left-box">
           <div className="left-content">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Button from "../../components/button";
 import Header from "../../components/header";
@@ -76,7 +77,9 @@ const Login = () => {
         <div className="input-field">
           <div className="password">
             <label for="password">Password</label>
-            <p className="forgot-pass blue-text">Forgot your password?</p>
+            <Link to="/forgotPassword" style={{ textDecoration: "none" }}>
+              <p className="forgot-pass blue-text">Forgot your password?</p>
+            </Link>
           </div>
           <input
             placeholder="Enter your password"
@@ -102,7 +105,10 @@ const Login = () => {
 
         <div className="lower-text">
           <p>
-            New to MyJobs? <span className="blue-text">Create an account</span>
+            New to MyJobs?
+            <Link to="/signup" style={{ textDecoration: "none" }}>
+              <span className="blue-text"> Create an account</span>
+            </Link>
           </p>
         </div>
       </div>
