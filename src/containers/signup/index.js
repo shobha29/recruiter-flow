@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Button from "../../components/button";
 import Header from "../../components/header";
@@ -191,7 +192,10 @@ const Signup = () => {
 
         <div className="lower-text">
           <p>
-            Have an account? <span className="blue-text">Login</span>
+            Have an account?
+            <Link to="/login" style={{ textDecoration: "none" }}>
+              <span className="blue-text"> Login</span>
+            </Link>
           </p>
         </div>
       </div>
