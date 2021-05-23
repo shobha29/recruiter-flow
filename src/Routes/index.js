@@ -1,7 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import { Home, Login, Signup, ForgotPassword } from "../containers";
+import {
+  Home,
+  Login,
+  Signup,
+  ForgotPassword,
+  ResetPassword,
+} from "../containers";
 
 import PublicRoute from "./PublicRoute";
 import PrivateRoute from "./PrivateRoute";
@@ -14,6 +20,7 @@ export default function Route() {
         <PublicRoute path="/login" exact component={Login} />
         <PublicRoute path="/signup" exact component={Signup} />
         <PublicRoute path="/forgotPassword" exact component={ForgotPassword} />
+        <PublicRoute path="/resetPassword" exact component={ResetPassword} />
       </Switch>
     </Router>
   );
