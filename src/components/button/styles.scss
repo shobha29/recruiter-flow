@@ -1,0 +1,21 @@
+@import "../../styles/colors.scss";
+
+.button {
+  padding: 13px 23px;
+  border: 1px solid $light-blue;
+  border-radius: 5px;
+  color: $white;
+  max-width: 148px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-button {
+  background: $fade-blue;
+}
+
+.solid-button {
+  background: $light-blue;
+}
