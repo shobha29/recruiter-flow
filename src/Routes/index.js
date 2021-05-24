@@ -7,6 +7,7 @@ import {
   Signup,
   ForgotPassword,
   ResetPassword,
+  UserDashboard,
 } from "../containers";
 
 import PublicRoute from "./PublicRoute";
@@ -21,6 +22,7 @@ export default function Route() {
         <PublicRoute path="/signup" exact component={Signup} />
         <PublicRoute path="/forgotPassword" exact component={ForgotPassword} />
         <PublicRoute path="/resetPassword" exact component={ResetPassword} />
+        <PublicRoute path="/userDashboard" exact component={UserDashboard} />
       </Switch>
     </Router>
   );

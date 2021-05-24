@@ -1,26 +1,27 @@
 @import "../../styles/colors.scss";
+@import "../../styles/units.scss";
 
 .empty-container {
   background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
     0% no-repeat padding-box;
-  height: 22rem;
+  height: $_352px;
   position: relative;
 }
 
 .signup-container {
   position: absolute;
   background: $white;
-  padding: 30px;
-  border-radius: 20px;
-  top: 7rem;
+  padding: $_30px;
+  border-radius: $_20px;
+  top: $_112px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0px 30px 36px $shadow;
+  box-shadow: 0px $_30px $_36px $shadow;
   width: 557px;
   color: $dark-blue;
 
   .title {
-    font-size: 1.4rem;
+    font-size: $_23px;
   }
 
   .input-field {
@@ -28,15 +29,15 @@
     flex-direction: column;
 
     label {
-      margin-top: 23px;
-      font-size: 16px;
+      margin-top: $_23px;
+      font-size: $_16px;
     }
 
     input {
-      padding: 15px 17px;
+      padding: $_15px $_17px;
       border: 1px solid $grey;
       border-radius: 5px;
-      margin-top: 8px;
+      margin-top: $_8px;
       outline: none;
 
       &:focus {
@@ -46,33 +47,33 @@
   }
 
   .top-text {
-    margin-top: 23px;
-    font-size: 16px;
+    margin-top: $_23px;
+    font-size: $_16px;
   }
 
   .top-btn-parent {
     display: flex;
-    margin-top: 8px;
+    margin-top: $_8px;
 
     .top-btn {
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 5px;
-      padding: 12px 17px;
-      width: 136px;
+      padding: $_12px $_17px;
+      width: $_136px;
 
       img {
-        width: 23px;
-        height: 23px;
-        margin-right: 10px;
+        width: $_23px;
+        height: $_23px;
+        margin-right: $_10px;
       }
     }
     .recruiter-btn {
       background: $light-blue;
       border: 1px solid $light-blue;
       color: $white;
-      margin-right: 20px;
+      margin-right: $_20px;
     }
 
     .candidate-btn {
@@ -86,39 +87,39 @@
 
     .left-pass {
       flex: 1;
-      margin-right: 10px;
+      margin-right: $_10px;
     }
 
     .right-pass {
       flex: 1;
-      margin-left: 10px;
+      margin-left: $_10px;
     }
   }
 
   .blue-text {
     color: $light-blue;
-    font-size: 18px;
+    font-size: $_18px;
     cursor: pointer;
   }
 
   .error-msg {
     color: $red;
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: $_14px;
+    margin-top: $_8px;
     display: flex;
     justify-content: flex-end;
   }
 
   .btn {
-    margin-top: 40px;
-    width: 148px;
+    margin-top: $_40px;
+    width: $_148px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .lower-text {
-    margin-top: 53px;
+    margin-top: $_53px;
     display: grid;
     justify-content: center;
   }

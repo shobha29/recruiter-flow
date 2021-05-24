@@ -1,32 +1,33 @@
 @import "../../styles/colors.scss";
+@import "../../styles/units.scss";
 
 .empty-container {
   background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
     0% no-repeat padding-box;
-  height: 22rem;
+  height: $_352px;
   position: relative;
 }
 
 .forgot-container {
   position: absolute;
   background: $white;
-  padding: 30px;
-  border-radius: 20px;
-  top: 7rem;
+  padding: $_30px;
+  border-radius: $_20px;
+  top: $_112px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0px 30px 36px $shadow;
+  box-shadow: 0px $_30px $_36px $shadow;
   width: 557px;
   color: $dark-blue;
 
   .title {
-    font-size: 1.4rem;
+    font-size: $_23px;
   }
 
   .message-text {
-    margin-top: 23px;
-    font-size: 16px;
-    line-height: 20px;
+    margin-top: $_23px;
+    font-size: $_16px;
+    line-height: $_20px;
   }
 
   .input-field {
@@ -34,15 +35,15 @@
     flex-direction: column;
 
     label {
-      margin-top: 23px;
-      font-size: 16px;
+      margin-top: $_23px;
+      font-size: $_16px;
     }
 
     input {
-      padding: 15px 17px;
+      padding: $_15px $_17px;
       border: 1px solid $grey;
       border-radius: 5px;
-      margin-top: 8px;
+      margin-top: $_8px;
       outline: none;
 
       &:focus {
@@ -52,15 +53,15 @@
   }
   .error-msg {
     color: $red;
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: $_14px;
+    margin-top: $_8px;
     display: flex;
     justify-content: flex-end;
   }
 
   .btn {
-    margin-top: 40px;
-    width: 148px;
+    margin-top: $_40px;
+    width: $_148px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

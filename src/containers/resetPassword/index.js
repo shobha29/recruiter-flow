@@ -33,7 +33,7 @@ const ForgotPassword = () => {
   return (
     <div className="reset-password">
       <div className="empty-container">
-        <Header rightContent={true} />
+        <Header isButton={true} />
       </div>
 
       <div className="reset-container">

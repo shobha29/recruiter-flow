@@ -1,0 +1,116 @@
+@import "../../styles/colors.scss";
+@import "../../styles/units.scss";
+
+.dashboard-empty-container {
+  background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
+    0% no-repeat padding-box;
+  height: $_208px;
+  position: relative;
+}
+
+.job-top-container {
+  position: absolute;
+  top: $_80px;
+  color: $white;
+  width: 80vw;
+  left: 50%;
+  transform: translate(-50%);
+
+  .top-home-container {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+      width: $_10px;
+      height: $_9px;
+    }
+
+    p {
+      font-size: $_12px;
+    }
+  }
+
+  .job-big-text {
+    margin-top: $_26px;
+    font-size: $_22px;
+  }
+
+  .all-posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .job-card {
+      background: $white;
+      border-radius: 5px;
+      width: $_260px;
+      // height: 162px;
+      margin-top: $_18px;
+      color: $blue;
+      padding: $_15px;
+
+      .job-card-title {
+        font-size: $_16px;
+      }
+
+      .job-card-content {
+        font-size: $_14px;
+        opacity: $_13px;
+        margin-top: $_10px;
+        margin-bottom: $_8px;
+        padding-bottom: 5px;
+      }
+
+      .job-card-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+
+          img {
+            width: $_15px;
+            height: $_15px;
+            margin-right: $_9px;
+          }
+
+          .location-text {
+            font-size: $_14px;
+            opacity: 0.8;
+          }
+        }
+
+        .view-application-btn {
+          font-size: $_14px;
+          padding: $_9px $_15px;
+          background: $fade-light-blue;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.no-job-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10vh;
+
+  img {
+    width: $_100px;
+    height: $_100px;
+  }
+
+  .post-show-text {
+    margin-top: $_18px;
+    font-size: $_20px;
+    opacity: 0.8;
+    color: $blue;
+    margin-bottom: $_40px;
+  }
+}

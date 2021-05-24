@@ -1,13 +1,14 @@
 @import "../../styles/colors.scss";
+@import "../../styles/units.scss";
 
 .button {
-  padding: 13px 23px;
+  padding: $_13px $_23px;
   border: 1px solid $light-blue;
   border-radius: 5px;
-  max-width: 148px;
+  max-width: $_148px;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-size: $_16px;
   cursor: pointer;
 }
 

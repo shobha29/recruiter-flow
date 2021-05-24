@@ -64,7 +64,7 @@ const Signup = () => {
   return (
     <div className="signup">
       <div className="empty-container">
-        <Header rightContent={false} />
+        <Header />
       </div>
 
       <div className="signup-container">

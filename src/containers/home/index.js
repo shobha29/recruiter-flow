@@ -51,7 +51,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="home-empty-container">
-        <Header />
+        <Header isButton={true} />
       </div>
 
       <div className="top-container">

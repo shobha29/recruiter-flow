@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="empty-container">
-        <Header rightContent={false} />
+        <Header />
       </div>
 
       <div className="login-container">

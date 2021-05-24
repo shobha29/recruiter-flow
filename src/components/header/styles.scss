@@ -1,29 +1,68 @@
 @import "../../styles/colors.scss";
-
-// .main-container {
-//   background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
-//     0% no-repeat padding-box;
-// }
+@import "../../styles/units.scss";
 
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 70px;
-  padding: 12px 0px;
+  margin: 0 $_70px;
+  padding: $_12px 0;
   border: solid $purple;
   border-width: 0 0 1px 0;
-  min-height: 48px;
+  min-height: $_48px;
 
   .header-title {
     color: $white;
-    font-size: 1.3rem;
+    font-size: $_22px;
     font-weight: bold;
     cursor: pointer;
   }
 
   span {
     color: $light-blue;
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+
+    .post-job {
+      position: relative;
+      margin-right: $_48px;
+
+      p {
+        color: $white;
+        opacity: 0.8;
+        font-size: $_16px;
+      }
+
+      .post-blue-line {
+        height: 4px;
+        width: $_50px;
+        background: $light-blue;
+        position: absolute;
+        top: $_41px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .profile-circle {
+      width: $_46px;
+      height: $_46px;
+      border-radius: $_25px;
+      background: $dim1-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $blue;
+    }
+
+    img {
+      width: $_13px;
+      height: $_10px;
+      margin-left: $_8px;
+    }
   }
 }
