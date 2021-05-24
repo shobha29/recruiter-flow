@@ -8,6 +8,7 @@ import {
   ForgotPassword,
   ResetPassword,
   UserDashboard,
+  PostJob,
 } from "../containers";
 
 import PublicRoute from "./PublicRoute";
@@ -23,6 +24,7 @@ export default function Route() {
         <PublicRoute path="/forgotPassword" exact component={ForgotPassword} />
         <PublicRoute path="/resetPassword" exact component={ResetPassword} />
         <PublicRoute path="/userDashboard" exact component={UserDashboard} />
+        <PublicRoute path="/userDashboard/postJob" exact component={PostJob} />
       </Switch>
     </Router>
   );

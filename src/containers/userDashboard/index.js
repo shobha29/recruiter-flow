@@ -6,45 +6,45 @@ import { Button, Header } from "../../components";
 import "./styles.scss";
 
 const UserDashboard = () => {
-  const posts = 0;
-  // const posts = [
-  //   {
-  //     title: "UI UX Designer",
-  //     content:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-  //     location: "Bengaluru",
-  //   },
-  //   {
-  //     title: "Front-end Designer",
-  //     content:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-  //     location: "Gurgaon",
-  //   },
-  //   {
-  //     title: "Java Developer",
-  //     content:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-  //     location: "Bengaluru",
-  //   },
-  //   {
-  //     title: "UI UX Designer",
-  //     content:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-  //     location: "Bengaluru",
-  //   },
-  //   {
-  //     title: "Front-end Designer",
-  //     content:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-  //     location: "Gurgaon",
-  //   },
-  //   {
-  //     title: "Java Developer",
-  //     content:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-  //     location: "Bengaluru",
-  //   },
-  // ];
+  // const posts = 0;
+  const posts = [
+    {
+      title: "UI UX Designer",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+      location: "Bengaluru",
+    },
+    {
+      title: "Front-end Designer",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+      location: "Gurgaon",
+    },
+    {
+      title: "Java Developer",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+      location: "Bengaluru",
+    },
+    {
+      title: "UI UX Designer",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+      location: "Bengaluru",
+    },
+    {
+      title: "Front-end Designer",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+      location: "Gurgaon",
+    },
+    {
+      title: "Java Developer",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+      location: "Bengaluru",
+    },
+  ];
 
   return (
     <div className="dashboard">

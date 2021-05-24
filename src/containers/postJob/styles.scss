@@ -1,0 +1,114 @@
+@import "../../styles/colors.scss";
+@import "../../styles/units.scss";
+
+.jobPost-empty-container {
+  background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
+    0% no-repeat padding-box;
+  height: $_208px;
+  position: relative;
+}
+
+.top-job-home-container {
+  position: absolute;
+  top: $_80px;
+  color: $white;
+  width: 80vw;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    margin-right: 5px;
+    width: $_10px;
+    height: $_9px;
+  }
+
+  p {
+    font-size: $_12px;
+  }
+}
+
+.postJob-container {
+  position: absolute;
+  background: $white;
+  padding: $_30px;
+  border-radius: $_20px;
+  top: $_112px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px $_30px $_36px $shadow;
+  width: 557px;
+  color: $dark-blue;
+
+  .title {
+    font-size: $_23px;
+  }
+
+  .input-field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-top: $_23px;
+      font-size: $_16px;
+    }
+
+    input {
+      padding: $_15px $_17px;
+      border: 1px solid $grey;
+      border-radius: 5px;
+      margin-top: $_8px;
+      outline: none;
+
+      &:focus {
+        border-color: $light-blue;
+      }
+    }
+  }
+
+  .forgot-pass {
+    margin-top: $_23px;
+    font-size: $_16px;
+  }
+
+  .password {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blue-text {
+    color: $light-blue;
+    font-size: $_18px;
+    cursor: pointer;
+  }
+
+  .error-msg {
+    color: $red;
+    font-size: $_14px;
+    margin-top: $_8px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    margin-top: $_40px;
+    width: $_148px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lower-text {
+    margin-top: $_53px;
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .postJob-container {
+    width: 300px;
+  }
+}
