@@ -63,14 +63,9 @@ const Login = () => {
             value={state.email}
             onFocus={() => setError({ isError: false, message: "" })}
             onChange={(e) => setState({ ...state, email: e?.target.value })}
-            style={
-              error.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: error.isError ? colors.roseRed : null,
+            }}
           />
         </div>
 
@@ -88,14 +83,9 @@ const Login = () => {
             value={state.password}
             onFocus={() => setError({ isError: false, message: "" })}
             onChange={(e) => setState({ ...state, password: e?.target.value })}
-            style={
-              error.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: error.isError ? colors.roseRed : null,
+            }}
           />
         </div>
         {error.isError && <p className="error-msg">{error.message}</p>}

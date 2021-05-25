@@ -8,7 +8,7 @@ import { colors } from "../../styles/colors";
 
 import "./styles.scss";
 
-const JobPost = () => {
+const PostJob = () => {
   const [state, setState] = useState({
     jobTitle: "",
     description: "",
@@ -85,14 +85,9 @@ const JobPost = () => {
             value={state.jobTitle}
             onFocus={() => setTitleError({ isError: false, message: "" })}
             onChange={(e) => setState({ ...state, jobTitle: e?.target.value })}
-            style={
-              titleError.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: titleError.isError ? colors.roseRed : null,
+            }}
           />
         </div>
         {titleError.isError && (
@@ -101,23 +96,18 @@ const JobPost = () => {
 
         <div className="input-field">
           <label for="job-description">Description*</label>
-          <input
+          <textarea
             placeholder="Enter job description"
-            type="text"
+            type="textarea"
             id="job-description"
             value={state.description}
             onFocus={() => setDescriptionError({ isError: false, message: "" })}
             onChange={(e) =>
               setState({ ...state, description: e?.target.value })
             }
-            style={
-              descriptionError.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: descriptionError.isError ? colors.roseRed : null,
+            }}
           />
         </div>
         {descriptionError.isError && (
@@ -133,14 +123,9 @@ const JobPost = () => {
             value={state.location}
             onFocus={() => setLocationError({ isError: false, message: "" })}
             onChange={(e) => setState({ ...state, location: e?.target.value })}
-            style={
-              locationError.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: locationError.isError ? colors.roseRed : null,
+            }}
           />
         </div>
 
@@ -156,4 +141,4 @@ const JobPost = () => {
   );
 };
 
-export default JobPost;
+export default PostJob;

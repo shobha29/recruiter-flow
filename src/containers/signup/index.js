@@ -93,14 +93,9 @@ const Signup = () => {
             value={state.name}
             onFocus={() => setNameError({ isError: false, message: "" })}
             onChange={(e) => setState({ ...state, name: e?.target.value })}
-            style={
-              nameError.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: nameError.isError ? colors.roseRed : null,
+            }}
           />
         </div>
         {nameError.isError && <p className="error-msg">{nameError.message}</p>}
@@ -114,14 +109,9 @@ const Signup = () => {
             value={state.email}
             onFocus={() => setEmailError({ isError: false, message: "" })}
             onChange={(e) => setState({ ...state, email: e?.target.value })}
-            style={
-              emailError.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: emailError.isError ? colors.roseRed : null,
+            }}
           />
         </div>
         {emailError.isError && (
@@ -140,14 +130,9 @@ const Signup = () => {
               onChange={(e) =>
                 setState({ ...state, createPassword: e?.target.value })
               }
-              style={
-                passError.isError
-                  ? {
-                      borderColor: colors.roseRed,
-                      background: colors.dimGrey,
-                    }
-                  : { borderColor: null, background: null }
-              }
+              style={{
+                borderColor: passError.isError ? colors.roseRed : null,
+              }}
             />
           </div>
 
@@ -162,14 +147,9 @@ const Signup = () => {
               onChange={(e) =>
                 setState({ ...state, confirmPassword: e?.target.value })
               }
-              style={
-                passError.isError
-                  ? {
-                      borderColor: colors.roseRed,
-                      background: colors.dimGrey,
-                    }
-                  : { borderColor: null, background: null }
-              }
+              style={{
+                borderColor: passError.isError ? colors.roseRed : null,
+              }}
             />
           </div>
         </div>

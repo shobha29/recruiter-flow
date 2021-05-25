@@ -56,33 +56,23 @@
       font-size: $_16px;
     }
 
-    input {
+    input,
+    textarea {
       padding: $_15px $_17px;
       border: 1px solid $grey;
       border-radius: 5px;
       margin-top: $_8px;
       outline: none;
+      background: $fade-grey;
 
       &:focus {
         border-color: $light-blue;
       }
     }
-  }
 
-  .forgot-pass {
-    margin-top: $_23px;
-    font-size: $_16px;
-  }
-
-  .password {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .blue-text {
-    color: $light-blue;
-    font-size: $_18px;
-    cursor: pointer;
+    textarea {
+      height: $_100px;
+    }
   }
 
   .error-msg {
@@ -99,12 +89,6 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .lower-text {
-    margin-top: $_53px;
-    display: grid;
-    justify-content: center;
   }
 }
 

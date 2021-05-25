@@ -7,7 +7,7 @@ import { PASSWORD_LENGTH } from "../../constants";
 
 import "./styles.scss";
 
-const ForgotPassword = () => {
+const ResetPassword = () => {
   const [state, setState] = useState({ newPassword: "", confirmPassword: "" });
   const [error, setError] = useState({ isError: false, message: "" });
 
@@ -52,14 +52,9 @@ const ForgotPassword = () => {
             onChange={(e) =>
               setState({ ...state, newPassword: e?.target.value })
             }
-            style={
-              error.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: error.isError ? colors.roseRed : null,
+            }}
           />
         </div>
 
@@ -74,14 +69,9 @@ const ForgotPassword = () => {
             onChange={(e) =>
               setState({ ...state, confirmPassword: e?.target.value })
             }
-            style={
-              error.isError
-                ? {
-                    borderColor: colors.roseRed,
-                    background: colors.dimGrey,
-                  }
-                : { borderColor: null, background: null }
-            }
+            style={{
+              borderColor: error.isError ? colors.roseRed : null,
+            }}
           />
         </div>
         {error.isError && <p className="error-msg">{error.message}</p>}
@@ -94,4 +84,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword;
+export default ResetPassword;
