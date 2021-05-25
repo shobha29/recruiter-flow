@@ -18,9 +18,8 @@ const ForgotPassword = () => {
 
   return (
     <div className="forgot-password">
-      <div className="empty-container">
-        <Header isButton={true} />
-      </div>
+      <div className="forgot-empty-container"></div>
+      <Header isButton={true} />
 
       <div className="forgot-container">
         <p className="title">Forgot your password?</p>

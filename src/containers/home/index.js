@@ -50,9 +50,8 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="home-empty-container">
-        <Header isButton={true} />
-      </div>
+      <div className="home-empty-container"></div>
+      <Header isButton={true} />
 
       <div className="top-container">
         <div className="left-box">

@@ -5,16 +5,16 @@
   background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
     0% no-repeat padding-box;
   height: $_464px;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .top-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  position: absolute;
-  top: $_131px;
-  width: 100%;
+  margin-top: $_61px;
   align-self: center;
 
   .left-box {
@@ -51,8 +51,7 @@
 }
 
 .middle-container {
-  margin: $_144px $_112px 0 $_144px;
-
+  margin: $_74px $_112px 0 $_144px;
   color: $dark-blue;
   font-size: $_23px;
   letter-spacing: 0px;
@@ -91,7 +90,7 @@
 }
 
 .bottom-container {
-  margin: $_144px $_144px $_64px $_144px;
+  margin: $_74px $_144px $_64px $_144px;
 
   .title {
     color: $dark-blue;
@@ -119,7 +118,7 @@
   }
 
   .top-container {
-    top: $_100px;
+    margin-top: $_30px;
 
     .left-box {
       margin-left: $_80px;
@@ -222,7 +221,7 @@
   .top-container {
     flex-direction: column;
     align-items: center;
-    top: $_90px;
+    margin-top: $_20px;
 
     .left-box {
       margin: 0;

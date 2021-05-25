@@ -32,9 +32,8 @@ const ResetPassword = () => {
 
   return (
     <div className="reset-password">
-      <div className="empty-container">
-        <Header isButton={true} />
-      </div>
+      <div className="reset-empty-container"></div>
+      <Header isButton={true} />
 
       <div className="reset-container">
         <p className="title">Reset your password?</p>

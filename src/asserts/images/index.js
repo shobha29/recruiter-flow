@@ -15,6 +15,7 @@ import cvIcon from "./cvIcon.png";
 import writingIcon from "./writingIcon.png";
 import homeIcon from "./homeIcon.png";
 import locationIcon from "./locationIcon.png";
+import closeIcon from "./closeIcon.png";
 
 export {
   trevaIcon,
@@ -34,4 +35,5 @@ export {
   writingIcon,
   homeIcon,
   locationIcon,
+  closeIcon,
 };

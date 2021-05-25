@@ -1,0 +1,114 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/units.scss";
+
+.modal-container {
+  height: 80%;
+  margin: 2.5% 20%;
+  background: $white;
+  border-radius: $_20px;
+  box-shadow: 0 $_30px $_36px #557da526;
+  padding: $_27px $_30px;
+  color: $blue;
+
+  .modal-top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid $shadow;
+    border-width: 0 0 1px 0;
+    padding-bottom: $_10px;
+
+    p {
+      font-size: $_19px;
+    }
+
+    img {
+      width: $_15px;
+      height: $_15px;
+      cursor: pointer;
+    }
+  }
+
+  .total-application {
+    font-size: $_15px;
+    margin: $_10px 0;
+  }
+
+  .application-container {
+    background: $dark-fade-grey;
+    padding: $_9px $_8px;
+    border-radius: $_10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: scroll;
+    height: 80%;
+
+    .application-card {
+      background: $white;
+      padding: $_14px;
+      border-radius: 5px;
+      border: 1px solid $blue-opacity;
+      font-size: $_15px;
+      margin: $_10px;
+
+      .bold-text {
+        font-weight: bold;
+      }
+
+      .fade-text {
+        opacity: 0.8;
+      }
+
+      .card-top {
+        display: flex;
+        align-items: center;
+
+        .profile-circle {
+          width: $_50px;
+          height: $_50px;
+          background: $dim1-blue;
+          border-radius: $_25px;
+          margin-right: $_20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .name-email {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: $_40px;
+        }
+      }
+
+      .card-bottom {
+        margin-top: $_25px;
+
+        .skill-text {
+          font-size: $_13px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .no-application {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 50%;
+
+      .application-icon {
+        width: $_80px;
+        height: $_80px;
+        margin-bottom: $_20px;
+      }
+
+      p {
+        font-size: $_20px;
+      }
+    }
+  }
+}

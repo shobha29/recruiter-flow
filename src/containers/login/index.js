@@ -47,9 +47,8 @@ const Login = () => {
 
   return (
     <div className="login">
-      <div className="empty-container">
-        <Header />
-      </div>
+      <div className="login-empty-container"></div>
+      <Header />
 
       <div className="login-container">
         <p className="title">Login</p>

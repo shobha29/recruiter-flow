@@ -54,9 +54,8 @@ const PostJob = () => {
 
   return (
     <div className="jobPost">
-      <div className="jobPost-empty-container">
-        <Header profile={true} isPost={true} />
-      </div>
+      <div className="jobPost-empty-container"></div>
+      <Header profile={true} isPost={true} />
 
       <div className="top-job-home-container">
         <Link to="/userDashboard">

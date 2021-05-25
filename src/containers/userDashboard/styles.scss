@@ -5,16 +5,16 @@
   background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
     0% no-repeat padding-box;
   height: $_208px;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 .job-top-container {
-  position: absolute;
-  top: $_80px;
+  position: relative;
+  top: $_10px;
   color: $white;
-  width: 80vw;
-  left: 50%;
-  transform: translate(-50%);
+  padding: 0 $_128px;
 
   .top-home-container {
     display: flex;
@@ -38,17 +38,14 @@
   }
 
   .all-posts-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: $_10px;
 
     .job-card {
       background: $white;
       border-radius: 5px;
-      width: $_260px;
-      // height: 162px;
-      margin-top: $_18px;
+      margin: $_8px;
       color: $blue;
       padding: $_15px;
 
@@ -75,7 +72,6 @@
           img {
             width: $_15px;
             height: $_15px;
-            margin-right: $_9px;
           }
 
           .location-text {
@@ -86,9 +82,10 @@
 
         .view-application-btn {
           font-size: $_14px;
-          padding: $_9px $_15px;
+          padding: $_9px $_9px;
           background: $fade-light-blue;
           border-radius: 5px;
+          cursor: pointer;
         }
       }
     }
@@ -100,7 +97,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 10vh;
+  top: $_128px;
 
   img {
     width: $_100px;

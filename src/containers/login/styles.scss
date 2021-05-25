@@ -1,19 +1,22 @@
 @import "../../styles/colors.scss";
 @import "../../styles/units.scss";
 
-.empty-container {
+.login-empty-container {
   background: transparent linear-gradient(248deg, $blue 0%, $dark-blue 100%) 0%
     0% no-repeat padding-box;
   height: $_352px;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .login-container {
-  position: absolute;
+  position: relative;
   background: $white;
   padding: $_30px;
   border-radius: $_20px;
-  top: $_112px;
+  top: $_42px;
+  margin-bottom: $_100px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0px $_30px $_36px $shadow;
